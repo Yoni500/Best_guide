@@ -1,0 +1,4 @@
+* build a project. 
+    * index (base page).
+    * javascript
+    * css (boostrap). 
