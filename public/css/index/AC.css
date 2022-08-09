@@ -1,0 +1,206 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+  }
+  
+  input[type=Submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  input[type=checkbox] {
+    background-color: black;
+    color: white;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  button:hover {
+    opacity:1;
+  }
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 100%;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 10px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%;
+  }
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+  }
+  
+  
+  
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: fixed;
+  top: 0;
+      bottom: 2;
+      left: 0;
+      right: 0;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  #EmailMessage {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: fixed;
+    position: fixed;
+  top:0;
+      bottom: 2;
+      left: 0;
+      right: 0;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #EmailMessage p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  #usrmsg {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: fixed;
+      position: fixed;
+  top: 1.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #usrmsg p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  #citymsg {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: fixed;
+    position: fixed;
+  top: 2.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #citymsg p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  #postalmsg {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: fixed;
+    position: fixed;
+  top: 2.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #postalmsg p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }

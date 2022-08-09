@@ -1,0 +1,240 @@
+
+ <!DOCTYPE html>
+ <html lang="US">
+ 
+ <head>
+ 
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <meta name="description" content=" For Our Project">
+	 <meta name="author" content="Gady, Reem">
+	 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+ 
+	 <title>tourist Portal</title>
+ 
+ 
+	 <!-- Additional CSS Files -->
+	 
+	 <link rel="stylesheet" type="text/css" href="../css/index/bootstrap.min.css">
+ 
+	 <link rel="stylesheet" type="text/css" href="../css/index/font-awesome.css">
+ 
+	 <link rel="stylesheet" href="../css/index/AppPipe.css">
+ 
+	 <link rel="stylesheet" href="../css/index/owl-carousel.css">
+ 
+ </head>
+ 
+ <body>
+ 
+	 <!-- ***** Preloader Start ***** -->
+	 <div id="preloader">
+		 <div class="jumper">
+			 <div></div>
+			 <div></div>
+			 <div></div>
+		 </div>
+	 </div>
+	 <!-- ***** Preloader End ***** -->
+ 
+ 
+	 <!-- ***** Header Area Start ***** -->
+	 <header class="header-sticky">
+		 <div class="header-area container">
+			 <div class="row">
+				 <div class="col-12">
+					 <nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+                        <a href="/account/" class="logo">
+                            tourist Portal 
+                            
+                        </a>
+						 <!-- ***** Logo End ***** -->
+						 <!-- ***** Menu Start ***** -->
+						 <ul class="nav">
+							 <li class="scroll-to-section"><a href="/" class="menu-item">Home</a></li>
+							 <li class="scroll-to-section"><a href="/account/logout" class="menu-item">logout</a></li>
+							 
+						 </ul>
+						 <a class='menu-trigger'>
+							 <span>Menu</span>
+						 </a>
+						 
+						 <!-- ***** Menu End ***** -->
+					 </nav>
+					 
+				 </div>
+			 </div>
+		 </div>
+		 
+	 </header>
+	 <!-- ***** Header Area End ***** -->
+	 
+	 
+	 <!-- ***** Welcome Area Start ***** -->
+	 <div class="welcome-area" id="welcome">
+		 <!-- ***** Header Text Start ***** -->
+		 <div class="header-text">
+			 <div class="container">
+				 <div class="row">
+					 <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+						 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+						 
+						 
+						 <h1><em><b> choose your vacation</b></em></h1>
+						 <p>
+							 please fill the below info	to let us reserve it for you .<br>
+							 it will take maximum 48 hours.<br>
+							 after we done, we will email you will your recipt.<br>
+							 if we not success we will contact you back.<br>
+							 if any issue you wellcome to contact us <a href="/">contact us</a> 
+							 
+
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+		 <!-- ***** Header Text End ***** -->
+	 </div>
+	 <!-- ***** Welcome Area End ***** --> 
+	 <!-- ***** About Big Item Start ***** -->
+	 <section class="section" id="about">
+		
+		 <div class="title-text-about"></div> 
+		 <div class="container">    
+			 <div class="row">
+				 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+					 data-scroll-reveal="enter left move 30px over 0.5s after 0.4s">
+						<form action="/webapp/webapp" method="POST" >
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <label class="input-group-text" for="inputGroupSelect01">select</label>
+								</div>
+								<select class="custom-select" id="inputGroupSelect01" name="choose" onchange="admSelectCheck(this);" >
+								  <option id="select" value="5"selected>choose your vacation</option>
+								  <option id="Kani" value="0">Kani</option>
+								  <option id="Grand" value="1">Grand Massif Samoëns Morillon</option>
+								  <option id="Cefalu" value="2">Cefalù</option>
+								  <option id="La" value="3">La Pointe aux Canonniers</option>
+								</select>
+							</div>
+							<div id="Cefalu_price" style="display:none;">
+								<option id="Cefalu_price_1">Price : € 2,350</option>
+							</div>
+							<div id="Grand_price" style="display:none;">
+								<option id="Grand_price_1">Price : € 2,439</option>
+							</div>
+							<div id="Kani_price" style="display:none;">
+								<option id="Kani_price_1">Price : € 2,187</option>
+							</div>
+							<div id="La_price" style="display:none;">
+								<option id="La_price_1">Price : € 2,266</option>
+							</div>
+							<br><br>
+							<div class="form-group">
+							  <label for="formGroupExampleInput">ID</label>
+							  <input type="text" class="form-control" name="id" id="formGroupExampleInput" placeholder="your ID" required>
+							</div>
+							<div class="form-group">
+							  <label for="formGroupExampleInput2">Email</label>
+							  <input type="text" class="form-control" name="Email" id="formGroupExampleInput2" placeholder="your Email" required>
+							</div>
+							
+							
+							<div class="form-group form-button">
+							<input type="submit" name="info" id="info"  class="form-submit" value="Buy" onclick="click(this);"  />
+
+							
+						
+						</div>
+                            </div>
+						
+							
+							
+						  </form>
+					  
+						
+						 </div>
+					 </div>
+		 </div>
+	 </section>
+	
+	
+ 
+	 <!-- jQuery -->
+	 <script src="../js/index/jquery-2.1.0.min.js"></script>
+ 
+	 <!-- Bootstrap -->
+	 <script src="../js/index/popper.js"></script>
+	 <script src="js/index/bootstrap.min.js"></script>
+ 
+	 <!-- Plugins -->
+	 <script src="../js/index/owl-carousel.js"></script>
+	 <script src="../js/index/scrollreveal.min.js"></script>
+	 <script src="../js/index/waypoints.min.js"></script>
+	 <script src="../js/index/jquery.counterup.min.js"></script>
+	 <script src="../js/index/imgfix.min.js"></script>
+ 
+	 <!-- Global Init -->
+	 <script src="../js/index/custom.js"></script>
+	 <script src="../js/index/main.js "></script>
+	 <script>
+	 	function admSelectCheck(nameSelect)
+		{
+			console.log(nameSelect);
+			if(nameSelect){
+				LaOptionValue = document.getElementById("La").value;
+				KaniOptionValue = document.getElementById("Kani").value;
+				GrandOptionValue = document.getElementById("Grand").value;
+				CefaluOptionValue = document.getElementById("Cefalu").value;
+				notingOptionValue = document.getElementById("select").value;
+				if(LaOptionValue == nameSelect.value){
+					document.getElementById("Kani_price").style.display = "none";
+					document.getElementById("Grand_price").style.display = "none";
+					document.getElementById("Cefalu_price").style.display = "none";
+					document.getElementById("La_price").style.display = "block";
+				}
+				else if (KaniOptionValue == nameSelect.value){
+					document.getElementById("La_price").style.display = "none";
+					document.getElementById("Grand_price").style.display = "none";
+					document.getElementById("Cefalu_price").style.display = "none";
+					document.getElementById("Kani_price").style.display = "block";
+					
+				}
+				else if (GrandOptionValue == nameSelect.value){
+					document.getElementById("La_price").style.display = "none";
+					document.getElementById("Kani_price").style.display = "none";
+					document.getElementById("Cefalu_price").style.display = "none";
+					document.getElementById("Grand_price").style.display = "block";
+				}
+				else if (CefaluOptionValue == nameSelect.value){
+					document.getElementById("La_price").style.display = "none";
+					document.getElementById("Kani_price").style.display = "none";
+					document.getElementById("Grand_price").style.display = "none";
+					document.getElementById("Cefalu_price").style.display = "block";
+				
+				}
+				else if (notingOptionValue == nameSelect.value){
+					document.getElementById("La_price").style.display = "none";
+					document.getElementById("Kani_price").style.display = "none";
+					document.getElementById("Grand_price").style.display = "none";
+					document.getElementById("Cefalu_price").style.display = "none";
+				
+				}
+			}
+			else{
+				document.getElementById("La_price").style.display = "none";
+				document.getElementById("Kani_price").style.display = "none";
+				document.getElementById("Grand_price").style.display = "none";
+				document.getElementById("Cefalu_price").style.display = "none";
+			}
+		}
+		function click(select){
+			alert("you Success to buy");
+		}
+	 </script>
+ </body>
+ </html>
+
+
+

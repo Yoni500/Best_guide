@@ -1,0 +1,61 @@
+
+html(lang='en')
+ head
+   title guide Center
+       link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css')
+        
+   style.
+      
+      table.ui.celled * {  border: 1px solid black;}
+   style(type='text/css').
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+   script.
+    function myFunction() {
+            location.replace("/");
+    }
+    
+    
+ body
+   h2 our guides
+
+   input(type='button', value='Home Page' onclick="myFunction()")
+   
+   br
+
+form(action='/guide' , method='GET' )
+      table.tg
+        thead
+          tr
+            th profession
+            th email 
+            th user_info
+            th join_date
+            
+        tbody#dataTable
+         each user in users 
+            tr
+              td #{user.user}
+              td #{user.email}
+              td #{user.user_info}
+              td #{user.created}
+               
+             
+                
+                
+        
+
+
+        
+        
+       
+        
+        
+      
+   
+                
+        

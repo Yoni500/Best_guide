@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" For Our Project">
-    <meta name="author" content="Gady, Reem">
+    <meta name="author" content="Yoni">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>register</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="../fonts/Userfonts/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="../css/user/style.css">
+    <link rel="stylesheet" href="../css/style_register.css">
 </head>
 <body>
 
@@ -21,13 +21,20 @@
     <div class="main">
         
         <!-- Sign up form -->
+
+        
         <section class="signup">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
                         <p><b>User name:</b> must Start with Letter. <br><b>email:</b> must contain a vaild email like : a@...<br> <b>password:</b> must contain least one numeric digit,one lowercase letter <b>AND</b> no less then 6 characters .</p>
+                        <p><b>please write down in the first box if you are buyer or a guide</b></p>
                         <h2 class="form-title">Sign up</h2>
                         <form action="/account/register" method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="customer"><i class="zmdi zmdi-email"></i></label>
+                                <input type="text" name="customer" id="customer" placeholder="guide or tourist?" required/>
+                            </div>       
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email" onblur="validateEmail(this.value);" required/>
@@ -41,6 +48,14 @@
                                 <input type="password" name="psw" id="re_pass" placeholder="Repeat your password" onblur="matchPassword()"  required/>
                             </div>
                             <div class="form-group">
+                                <label for="user_info"><i class="zmdi-text-format"></i></label>
+                                <input type="text" name="user_info" id="user" placeholder="what do you like us to know" required/>
+                            </div>
+                            <a><b>please write down any information about you.<br>
+                                if you are a tourist please meantion places you like<br>
+                                if you are a guide please meantion your proffesinals.</b></a>
+                                <br><br>
+                            <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>
@@ -51,8 +66,8 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="index.html" class="signup-image-link">Back To Home</a>
+                        <figure><img src="../images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="/" class="signup-image-link">Back To Home</a>
                         <a href="login" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
@@ -66,7 +81,7 @@
     
 
     <!-- JS -->
-    <script src="../jquery/Uservendor/jquery/jquery.min.js"></script>
-    <script src="../js/user/main.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -38,7 +38,7 @@ body {
 
 .hero_area {
   background-color: #2801b9;
-  background-image: url(../images/beach_bg.jpeg);
+  background-image: url(../images/summer.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -59,7 +59,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 0px 25px;
-  color: #fefeff;
+  color: #000000;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -82,7 +82,7 @@ body {
   display: block;
   width: 40px;
   height: 4px;
-  background-color: #fff;
+  background-color: rgb(9, 9, 9);
   margin: 7px 0;
   transition: all 0.3s;
   border-radius: 5px;
@@ -199,7 +199,7 @@ a:focus {
   font-family: "Righteous", cursive;
   font-size: 24px;
   font-weight: 500;
-  color: #fefeff;
+  color: #080808;
   margin-top: 5px;
 }
 
@@ -262,7 +262,7 @@ a:focus {
 
 .slider_item-detail {
   text-align: center;
-  color: #fff;
+  color: rgb(5, 5, 5);
 }
 
 .slider_item-detail h1 {
@@ -309,7 +309,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 28px;
   background-position: center;
-  background-color: #fff;
+  background-color: rgb(198, 239, 13);
   transform: translateY(-50%);
 }
 
